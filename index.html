@@ -17,16 +17,16 @@
         function drawChart() {
 
             var data = google.visualization.arrayToDataTable([
-                ['Success', 'Failed', 'Pending'],
-                [10, 24, 20],
+                ['genre', 'Success', 'Failed', 'Pending'],
+                ['', 10, 24, 20],
             ]);
 
             var options = {
-                width: 600,
-                height: 400,
+                width: 400,
+                height: 100,
                 legend: { position: 'top', maxLines: 1 },
                 bar: { groupWidth: '75%' },
-                isStacked: true
+                isStacked: 'percent'
             };
 
             // Instantiate and draw our chart, passing in some options.
