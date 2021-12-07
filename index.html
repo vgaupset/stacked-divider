@@ -18,13 +18,13 @@
 
             var data = google.visualization.arrayToDataTable([
                 ['Success', 'Failed', 'Pending'],
-                ['', 10, 24, 20, ''],
+                [10, 24, 20],
             ]);
 
             var options = {
                 width: 600,
                 height: 400,
-                legend: { position: 'top', maxLines: 3 },
+                legend: { position: 'top', maxLines: 1 },
                 bar: { groupWidth: '75%' },
                 isStacked: true
             };
